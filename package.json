@@ -4,7 +4,8 @@
   "description": "从0开始搭建一个开源库",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open --color --hot",
+    "startTS": "webpack-dev-server --open --color --hot --config webpack.config.js",
+    "startJS": "webpack-dev-server --open --color --hot --config webpack.config.normal.js",
     "lint": "eslint src/*.js",
     "doc": "jsdoc src/*.js -d ./docs/developer",
     "test": "echo \"Error: no test specified\" && exit 1",
