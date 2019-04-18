@@ -29,6 +29,9 @@ module.exports = {
       template: './src/index.html'
     })
   ],
+  optimization: {
+    usedExports: true
+  },
   module: {
     rules: [
       { 
