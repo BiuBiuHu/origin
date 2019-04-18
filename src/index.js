@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Welcome from './components/Welcome.jsx';
+import 'antd-mobile/dist/antd-mobile.css'; 
 
 function HelloMessage(props) {
   return (<div>
