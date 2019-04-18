@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Welcome from './components/Welcome.jsx';
+import MenuExample from './components/Menu.jsx';
 
 function HelloMessage(props) {
   return (<div>
@@ -8,6 +9,7 @@ function HelloMessage(props) {
     <Welcome name='biubiu_hu'>
       测试
     </Welcome>
+    <MenuExample></MenuExample>
   </div>);
 }
 
