@@ -9,7 +9,7 @@
     "doc": "jsdoc src/*.js -d ./docs/developer",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "./node_modules/.bin/webpack-cli --config webpack.config.js",
-    "buildTS": "./node_modules/.bin/webpack-cli --config webpack.config.ts.js",
+    "buildTS": "./node_modules/.bin/webpack-cli --config webpack.config.js",
     "dev": "./node_modules/.bin/webpack-cli --config webpack.config.dev.js",
     "prod": "./node_modules/.bin/webpack-cli --config webpack.config.prod.js",
     "rollup": "./node_modules/.bin/rollup -c"
