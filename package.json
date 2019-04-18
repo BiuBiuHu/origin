@@ -4,12 +4,12 @@
   "description": "从0开始搭建一个开源库",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open",
+    "start": "webpack-dev-server --open --color --hot",
     "lint": "eslint src/*.js",
     "doc": "jsdoc src/*.js -d ./docs/developer",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "./node_modules/.bin/webpack-cli --config webpack.config.js",
-    "buildTS": "./node_modules/.bin/webpack-cli --config webpack.typescript.js",
+    "buildTS": "./node_modules/.bin/webpack-cli --config webpack.config.ts.js",
     "dev": "./node_modules/.bin/webpack-cli --config webpack.config.dev.js",
     "prod": "./node_modules/.bin/webpack-cli --config webpack.config.prod.js",
     "rollup": "./node_modules/.bin/rollup -c"

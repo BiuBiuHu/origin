@@ -5,4 +5,6 @@ export interface HelloProps {
     framework: string; 
 }
 
-export const Hello = (props: HelloProps) => <h1>Hello from {props.compiler} and {props.framework}!</h1>;
+export const Hello = (props: HelloProps) => {
+    return (<h1>Hello from ts biubiu dasdas  {props.compiler} and {props.framework}!</h1>);
+};

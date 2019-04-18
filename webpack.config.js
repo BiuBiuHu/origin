@@ -5,16 +5,16 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.js',
+  entry: './src/index.tsx',
   output: {
-    libraryTarget: 'umd',
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'index.js'
   },
+  devtool: "source-map",
   devServer: {
     contentBase: path.resolve(__dirname, 'build'),
     compress: true,
-    port: 8080
+    port: 8081
   },
   optimization: {
     splitChunks: {
@@ -31,6 +31,15 @@ module.exports = {
   ],
   module: {
     rules: [
+      { 
+        test: /\.ts[x]?$/, 
+        loader: "awesome-typescript-loader" 
+      },
+      { 
+        enforce: "pre", 
+        test: /\.ts[x]$/, 
+        loader: "source-map-loader" 
+      },
       {
         test: /\.(js|jsx)$/,
         exclude: /(node_modules|bower_components)/,
@@ -42,5 +51,8 @@ module.exports = {
         }
       },
     ]
+  },
+  resolve: {
+    extensions: [".ts", ".tsx", ".js", ".json", ".png"],
   },
 }

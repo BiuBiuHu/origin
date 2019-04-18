@@ -5,7 +5,7 @@ import Welcome from './components/Welcome.jsx';
 function HelloMessage(props) {
   return (<div>
     <h1>Hello World!</h1>
-    <Welcome name='biubiu'>
+    <Welcome name='biubiu_hu'>
       测试
     </Welcome>
   </div>);
