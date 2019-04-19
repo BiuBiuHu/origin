@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Welcome from './components/Welcome.jsx';
+import SimpleChart from './components/Chart.jsx';
 import 'antd-mobile/dist/antd-mobile.css'; 
 
 function HelloMessage(props) {
@@ -9,6 +10,7 @@ function HelloMessage(props) {
     <Welcome name='biubiu_hu'>
       测试
     </Welcome>
+    <SimpleChart></SimpleChart>
   </div>);
 }
 
