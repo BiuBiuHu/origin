@@ -2,15 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Welcome from './components/Welcome.jsx';
 import SimpleChart from './components/Chart.jsx';
+import SimpleChartHooks from './components/ChartHooks.jsx';
 import 'antd-mobile/dist/antd-mobile.css'; 
 
 function HelloMessage(props) {
   return (<div>
-    <h1>Hello World!</h1>
+    
     <Welcome name='biubiu_hu'>
-      测试
+      <SimpleChart id='1'></SimpleChart>
     </Welcome>
-    <SimpleChart></SimpleChart>
+    <h1>Hello World!</h1>
+    <SimpleChart id='2'></SimpleChart>
+    <SimpleChartHooks></SimpleChartHooks>
   </div>);
 }
 
