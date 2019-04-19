@@ -10,3 +10,9 @@
 This is a new project. I want to use top technology to show this page.
 
 Now I have used webpack 4 , React 16, and i have a home page of this repository.
+
+2019.04.18
+
+This project can support TypeScript in dev mode and producation mod.
+
+Add ant-mobile for this project.
