@@ -16,3 +16,11 @@ Now I have used webpack 4 , React 16, and i have a home page of this repository.
 This project can support TypeScript in dev mode and producation mod.
 
 Add ant-mobile for this project.
+
+2019.04.19
+
+Add F2Chart to project!
+
+Add Simple Chart components to project!
+
+Add Hooks version components to project!
